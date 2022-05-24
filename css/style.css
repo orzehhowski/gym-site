@@ -190,7 +190,8 @@ h2 {
 
 .portfolio .carousel {
   padding-top: 30px;
-  margin: 80px;
+  margin: 50px auto;
+  max-width: 840px;
 }
 
 .portfolio .carousel .carousel-text {
