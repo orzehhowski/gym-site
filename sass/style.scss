@@ -206,6 +206,16 @@ h2 {
 			}
 		}
 	}
+
+	.card {
+		border-radius: 15px;
+		overflow: hidden;
+		transition: transform 0.3s;
+	}
+
+	.card:hover {
+		transform: scale(0.96);
+	}
 }
 
 .prices {
@@ -241,6 +251,7 @@ h2 {
 		.btn {
 			width: 120px;
 			height: 36px;
+			
 			color: $completely-white;
 			background-color: $gray;
 			transition: background-color 0.3s, box-shadow 0.3s;
@@ -278,7 +289,7 @@ h2 {
 		transition: transform 0.3s;
 
 		img {
-			height: 300px;
+			height: 200px;
 			object-fit: cover;
 		}
 
@@ -293,6 +304,10 @@ h2 {
 		.card-title {
 			margin-bottom: 20px;
 			text-align: center;
+		}
+
+		.card-body {
+			height: 140px;
 		}
 	}
 
@@ -315,6 +330,16 @@ h2 {
 			}
 			p {
 				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.team {
+		.card {
+			img {
+				height: 300px;
 			}
 		}
 	}

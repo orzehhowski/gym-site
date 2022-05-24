@@ -220,6 +220,20 @@ h2 {
   font-size: 18px;
 }
 
+.portfolio .card {
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.portfolio .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
 .prices .list-unstyled {
   margin: 20px;
   -webkit-box-shadow: 5px 5px 5px #222;
@@ -303,7 +317,7 @@ h2 {
 }
 
 .team .card img {
-  height: 300px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -326,6 +340,10 @@ h2 {
   text-align: center;
 }
 
+.team .card .card-body {
+  height: 140px;
+}
+
 .team .card:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
@@ -340,6 +358,12 @@ h2 {
   }
   .header .hero-txt p {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team .card img {
+    height: 300px;
   }
 }
 
