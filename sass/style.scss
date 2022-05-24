@@ -259,7 +259,7 @@ h2 {
 
 .team {
 	position: relative;
-	background-image: url("../img/team/gym-bg-small.jpg");
+	background-image: url('../img/team/gym-bg-small.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -299,7 +299,6 @@ h2 {
 	.card:hover {
 		transform: scale(0.95);
 	}
-
 }
 
 @media (min-width: 375px) {
@@ -332,7 +331,7 @@ h2 {
 
 	.aboutus-hero {
 		background-image: url('../img/people-big.jpg');
-		background-position-y: 50%;
+		background-position-y: 51%;
 	}
 
 	.team {
