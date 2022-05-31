@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animation';
 
 *,
 *::after,
@@ -252,7 +253,7 @@ h2 {
 		.btn {
 			width: 120px;
 			height: 36px;
-			
+
 			color: $completely-white;
 			background-color: $gray;
 			transition: background-color 0.3s, box-shadow 0.3s;
@@ -329,7 +330,7 @@ h2 {
 		margin: 20px 0 10px 0;
 		color: $white;
 		text-shadow: 0 0 8px $default-color;
-		font-size: 60px;
+		font-size: 48px;
 	}
 
 	.number {
@@ -339,6 +340,45 @@ h2 {
 
 	p {
 		text-transform: uppercase;
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/city-small.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: $white;
+	z-index: 0;
+
+	h3 {
+		text-transform: uppercase;
+	}
+
+	.shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 27, 0.7);
+		z-index: -1;
+	}
+
+	.row {
+		display: flex;
+		align-items: center;
+
+		.social-media {
+			a {
+				padding: 10px 15px;
+				color: $white;
+			}
+
+			a:hover {
+				color: $bg-color;
+			}
+		}
 	}
 }
 
@@ -388,5 +428,9 @@ h2 {
 	.team {
 		background-image: url('../img/team/gym-bg-large.jpg');
 		background-size: cover;
+	}
+
+	.contact {
+		background-image: url('../img/city-big.jpg');
 	}
 }
