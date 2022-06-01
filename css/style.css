@@ -245,12 +245,6 @@ h2 {
 
 .aboutus .aboutus-card {
   padding: 0 30px;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.aboutus .aboutus-card:hover {
-  color: #7777f9;
 }
 
 .aboutus-hero {
